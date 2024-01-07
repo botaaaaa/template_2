@@ -1,0 +1,161 @@
+@media (max-width :991px) {
+
+    nav .toggle-menu {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    nav .toggle-menu:hover+ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0000007a;
+    }
+
+    nav .toggle-menu:hover+ul a {
+        padding: 15px;
+
+    }
+
+    .form {
+        border-left: none;
+    }
+
+    .services-content {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+
+
+    .services-content .serv {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .services-content .serv i {
+        margin: 0px 0px 15px;
+    }
+
+    .subscribe .container {
+        flex-direction: column;
+    }
+
+    .subscribe .container p {
+        margin: 30px 0px 0px;
+        text-align: center;
+    }
+}
+
+@media (max-width : 768px) {
+
+    header .container::after {
+        width: calc(100% - 30px);
+    }
+
+
+    .landing .text {
+        width: 100%;
+    }
+
+    .landing .change-background {
+        display: none;
+    }
+
+    .special-heading+p {
+        width: 70%;
+
+    }
+
+    .services-content {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+
+
+    .services-content .serv {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .services-content .serv i {
+        margin: 0px 0px 15px;
+    }
+
+    .design .mobile {
+        flex: 0;
+        display: none;
+    }
+
+
+    .skills .container .skills-content {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+
+    .skills-content .testimonials .content {
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .contact .content {
+        flex-direction: column;
+    }
+
+    .contact .content .info {
+        text-align: center;
+        order: -1;
+    }
+
+    .contact .content .info span+h3 {
+        margin-top: 30px;
+    }
+
+}
+
+
+
+@media (max-width : 415px) {
+    .landing .text {
+        padding: 20px;
+    }
+
+    .special-heading+p {
+        width: 80%;
+
+    }
+
+    .services-content {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .services-content .serv {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .services-content .serv i {
+        margin: 0px 0px 15px;
+    }
+
+    .portfolio .portfolio-content {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .about .container img {
+        bottom: -180px;
+    }
+
+    .skills .container .skills-content {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+}
